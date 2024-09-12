@@ -1,4 +1,4 @@
-@import './dropzone.css';
+@import './droparea.css';
 
 input, textarea, select {
   appearance: none;
@@ -17,7 +17,6 @@ input, textarea, select {
 }
 
 
-
 label {
   display: block;
   font: var(--text-sm);
@@ -27,7 +26,7 @@ label {
 
 }
 
-input:focus, textarea:focus select:focus {
+input:focus, textarea:focus, select:focus {
   outline: .25rem solid var(--surface-secondary);
   border: .125rem solid var(--text-highlight);
   outline-offset: 1px;
