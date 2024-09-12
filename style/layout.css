@@ -8,6 +8,7 @@
 }
 
 main {
+  overflow: auto;
   padding: 4rem;
 
   & .main-container {

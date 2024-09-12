@@ -27,6 +27,46 @@
             Preencha os dados abaixo para matricular seu filho na escola de
             educação infantil Estrelas do Amanhã.
           </p>
+
+          <form action="submit">
+            <legend>Formulário de Aplicação do Pimpolho</legend>
+
+            <fieldset id="childForm">
+              <div class="inputWrapper">
+                <label for="fullName">Nome Completo: </label>
+                <input
+                  type="text"
+                  id="fullName"
+                  placeholder="Qual o nome do bacuri?"
+                />
+              </div>
+              <div class="inputWrapper">
+                <label for="bday">Data de Nascimento: </label>
+                <input type="date" id="bday" />
+              </div>
+              <div class="inputWrapper">
+                <label for="gender">Gênero: </label>
+                <select id="gender">
+                  <option value="Masculino">Masculino</option>
+                  <option value="Feminino">Feminino</option>
+                </select>
+              </div>
+              <div class="inputWrapper">
+                <label for="fieldset">Informações Médicas: </label>
+                <input
+                  type="fieldset"
+                  id="fieldset"
+                  placeholder="Se teu pequeno tem alguma condição médica, alergia ou necessidade especial, por favor nos conte por aqui."
+                />
+              </div>
+              <div class="inputWrapper">
+                <label for="birthCertificate"
+                  >Adicione a Certidão de Nascimento:
+                </label>
+                <input type="file" id="birthCertificate" />
+              </div>
+            </fieldset>
+          </form>
         </div>
       </main>
 
