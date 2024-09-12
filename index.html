@@ -53,17 +53,28 @@
               </div>
               <div class="inputWrapper">
                 <label for="fieldset">Informações Médicas: </label>
-                <input
-                  type="fieldset"
-                  id="fieldset"
+                <textarea
+                  name="medical-info"
+                  id="medical-info"
+                  rows="5"
                   placeholder="Se teu pequeno tem alguma condição médica, alergia ou necessidade especial, por favor nos conte por aqui."
-                />
+                ></textarea>
               </div>
               <div class="inputWrapper">
                 <label for="birthCertificate"
                   >Adicione a Certidão de Nascimento:
                 </label>
-                <input type="file" id="birthCertificate" />
+                <div class="dropZone">
+                  <input type="file" id="birthCertificate" />
+                  <img
+                    src="./Assets/Icons/Interface/cloud-upload.svg"
+                    alt="clicable cloud icon to insert new Birth Certificate"
+                  />
+                  <p>
+                    Clique aqui para <br />
+                    selecionar os arquivos
+                  </p>
+                </div>
               </div>
             </fieldset>
           </form>
