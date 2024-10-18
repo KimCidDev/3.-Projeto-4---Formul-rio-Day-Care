@@ -156,14 +156,17 @@
                   type="text"
                   id="fullParentName"
                   placeholder="Qual o nome do Pai?"
+                  name="fullParentName"
                 />
+                <small>Nome completo do Responsável principal e contato de emergência</small>
               </div>
               <div class="inputWrapper">
-                <label for="fullName">Telefone</label>
+                <label for="phone">Telefone</label>
                 <input
                   type="tel"
                   id="phone"
-                  placeholder="Em qual número podemos entrar em contato?"
+                  placeholder="ex.: (472) 773 3120"
+                  name="phone"
                 />
               </div>
               <div class="inputWrapper">
@@ -172,7 +175,12 @@
                   type="email"
                   id="email"
                   placeholder="Qual o teu email?"
+                  required
                 />
+                <div class="error">
+                  <img src="/Assets/Icons/Interface/alert-circle.svg" alt="alert sign">
+                  <span>O formato de email inserido não é válido</span>
+                </div>
               </div>
             </fieldset>
           </form>

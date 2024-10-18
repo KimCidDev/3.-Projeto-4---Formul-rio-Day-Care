@@ -73,3 +73,38 @@ input[disabled] {
 
     color: var(--text);
 }
+
+input {
+  &:invalid {
+    border: .125rem solid var(----semantic-error);
+  }
+}
+
+input + small {
+  display: inline-block;
+  margin-top: 0.25rem;
+
+  font: var(--text-sm);
+  color: #78716C;
+  opacity: 0.8;
+}
+
+input[required] + .error {
+  display: flex;
+  align-items: center;
+
+  font: var(--text-sm);
+  color: #78716C;
+  opacity: 0.8;
+
+  margin-top: 0.125rem;
+  gap: 0.25rem;
+}
+
+input:not(:focus):valid + .error {
+  display: none;
+}
+
+input:not(:focus):invalid + .error {
+  display: none;
+}
