@@ -26,7 +26,7 @@ label {
 
 }
 
-input:focus, textarea:focus, select:focus {
+input:focus, textarea:focus, select:focus, input[type="date"]:focus-within {
   outline: .25rem solid var(--surface-secondary);
   border: .125rem solid var(--text-highlight);
   outline-offset: 1px;
@@ -60,4 +60,16 @@ select {
 
 .address .flex {
   gap: 1.25rem;
+}
+
+.inputWrapper:has([disabled]) {
+  opacity: .3;
+}
+
+input[disabled] {  
+    background-color: var(--surface-disabled);
+  
+    border: 2px solid var(--stroke-default);
+
+    color: var(--text);
 }

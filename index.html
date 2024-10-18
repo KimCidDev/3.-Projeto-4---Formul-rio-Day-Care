@@ -64,7 +64,7 @@
                 <label for="birthCertificate"
                   >Adicione a Certidão de Nascimento:
                 </label>
-                
+
                 <div class="dropZone">
                   <input type="file" id="birthCertificate" name="birthCertificate"/>
                   <svg
@@ -105,8 +105,9 @@
                 <label for="cep">CEP</label>
                 <input type="text" id="cep" name="cep" />
               </div>
+
               <div class="flex">
-                <div class="inputWrapper" class="flex-2">
+                <div class="inputWrapper flex-2">
                   <label for="street">Rua</label>
                   <input
                     type="text"
@@ -116,14 +117,14 @@
                     disabled
                   />
                 </div>
-                <div class="flex-1">
+                <div class="inputWrapper flex-1">
                   <label for="number">Número</label>
                   <input type="number" id="number" name="number" />
                 </div>
               </div>
 
               <div class="flex">
-                <div class="flex-2">
+                <div class="inputWrapper flex-2">
                   <label for="city">Cidade</label>
                   <input
                     type="text"
@@ -133,7 +134,7 @@
                     disabled
                   />
                 </div>
-                <div class="flex-1">
+                <div class="inputWrapper flex-1">
                   <label for="province">Estado</label>
                   <input
                     type="text"
@@ -143,6 +144,35 @@
                     disabled
                   />
                 </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="parentInfo">
+              <legend>Informações do Responsável</legend>
+
+              <div class="inputWrapper">
+                <label for="fullName">Nome do Responsável: </label>
+                <input
+                  type="text"
+                  id="fullParentName"
+                  placeholder="Qual o nome do Pai?"
+                />
+              </div>
+              <div class="inputWrapper">
+                <label for="fullName">Telefone</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  placeholder="Em qual número podemos entrar em contato?"
+                />
+              </div>
+              <div class="inputWrapper">
+                <label for="fullName">Email: </label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Qual o teu email?"
+                />
               </div>
             </fieldset>
           </form>
