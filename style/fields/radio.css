@@ -1,0 +1,13 @@
+.radioWrapper {
+    background-color: red;
+}
+
+.radioImage {
+    width: 10px;
+    height: 10px;
+    background-color: purple;
+}
+
+.radioInner {
+    background-color: lightsalmon;
+}
