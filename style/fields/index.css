@@ -108,3 +108,7 @@ input:not(:focus):valid + .error {
 input:not(:focus):invalid + .error {
   display: none;
 }
+
+#email {
+  border: 1px solid var(--stroke-default);
+}
