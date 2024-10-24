@@ -20,10 +20,21 @@ button {
     &.btn-primary {
         color: #fff;
         background-color: var(--brand-color-dark);
+
+        &:hover,
+        &:focus {
+            background-color: var(--stroke-highlight);
+        }
     }
 
     &.btn-secondary {
         margin-left: auto;
         border: 2px solid var(--text-highlight);
+
+        &:hover,
+        &:focus {
+            color: var(--text-highlight);
+            outline: 0.25rem solid var(--surface-secondary);
+        }   
     }
 }
